@@ -1,7 +1,10 @@
 package com.example.lab08
 
 import android.content.Context
-class TaskReminderWorker<WorkerParameters>(
+import androidx.work.Worker
+import androidx.work.WorkerParameters
+
+class TaskReminderWorker(
     context: Context,
     params: WorkerParameters
 ) : Worker(context, params) {
